@@ -8,7 +8,7 @@ class Api::UsersController < ApplicationController
     )
 
     if @user.save
-      render show.json.jb
+      render "show.json.jb"
     else
       render json: { errors: @user.errors.full_messages }, status: :bad_request
     end
