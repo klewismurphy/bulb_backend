@@ -1,0 +1,21 @@
+@plants.map do |plant|
+  {
+    id: plant.id,
+    acc_symbol: plant.acc_symbol,
+    scientific_name: plant.scientific_name,
+    growth_period: plant.growth_period,
+    flower_color: plant.flower_color,
+    fruit_conspicuous: plant.fruit_conspicuous,
+    mature_height: plant.mature_height,
+    lifespan: plant.lifespan,
+    toxicity: plant.toxicity,
+    coarse_soil: plant.coarse_soil,
+    medium_soil: plant.medium_soil,
+    fine_soil: plant.fine_soil,
+    drought_tolerance: plant.drought_tolerance,
+    moisture_needs: plant.moisture_needs,
+    max_precip: plant.max_precip,
+    shade_tolerence: plant.shade_tolerence,
+    bloom_period: plant.bloom_period,
+  }
+end
