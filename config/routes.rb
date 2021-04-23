@@ -14,5 +14,8 @@ Rails.application.routes.draw do
 
     get "/plants" => "plants#index"
     get "/plants/:id" => "plants#show"
+
+    post "/gardens" => "gardens#create"
+    get "/gardens" => "gardens#index"
   end
 end

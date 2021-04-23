@@ -1,0 +1,6 @@
+{
+  id: @garden.id,
+  user_id: @garden.user_id,
+  plant: @plant.scientific_name,
+  status: @garden.status,
+}

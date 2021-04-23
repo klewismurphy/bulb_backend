@@ -1,0 +1,7 @@
+@gardens.map do |garden|
+  plant = Plant.find_by(id: garden.plant_id)
+  {
+    plant: plant.scientific_name,
+    status: garden.status,
+  }
+end
