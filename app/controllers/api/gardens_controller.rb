@@ -15,6 +15,12 @@ class Api::GardensController < ApplicationController
     render "index.json.jb"
   end
 
+  def show
+    @garden = Garden.find_by(id: params[:id])
+    @plant = Plant.find_by(id: @garden.plant_id)
+    render "show.json.jb"
+  end
+
   def update
     @garden = Garden.find_by(id: params[:id])
     @plant = Plant.find_by(id: @garden.plant_id)
