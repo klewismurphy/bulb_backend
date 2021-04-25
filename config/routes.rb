@@ -17,5 +17,7 @@ Rails.application.routes.draw do
 
     post "/gardens" => "gardens#create"
     get "/gardens" => "gardens#index"
+    patch "/gardens/:id" => "gardens#update"
+    delete "/gardens/:id" => "gardens#destroy"
   end
 end

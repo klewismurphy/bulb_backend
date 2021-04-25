@@ -14,4 +14,18 @@ class Api::GardensController < ApplicationController
     @gardens = Garden.where(user_id: current_user.id)
     render "index.json.jb"
   end
+
+  def update
+    @garden = Garden.find_by(id: params[:id])
+    @plant = Plant.find_by(id: @garden.plant_id)
+    @garden.status = params[:status]
+    @garden.save
+    render "show.json.jb"
+  end
+
+  def destroy
+    @garden = Garden.find_by(id: params[:id])
+    @garden.destroy
+    render json: { message: "This plant has been removed from your garden." }
+  end
 end
