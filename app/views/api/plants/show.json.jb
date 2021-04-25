@@ -14,6 +14,6 @@
   drought_tolerance: @plant.drought_tolerance,
   moisture_needs: @plant.moisture_needs,
   max_precip: @plant.max_precip,
-  shade_tolerence: @plant.shade_tolerence,
+  shade_tolerance: @plant.shade_tolerance,
   bloom_period: @plant.bloom_period,
 }

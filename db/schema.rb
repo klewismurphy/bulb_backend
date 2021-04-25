@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_22_234724) do
+ActiveRecord::Schema.define(version: 2021_04_25_223327) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,10 +38,17 @@ ActiveRecord::Schema.define(version: 2021_04_22_234724) do
     t.string "drought_tolerance"
     t.string "moisture_needs"
     t.integer "max_precip"
-    t.string "shade_tolerence"
+    t.string "shade_tolerance"
     t.string "bloom_period"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "common_name"
+    t.string "state"
+    t.string "duration"
+    t.string "flower_conspicuous"
+    t.integer "root_depth"
+    t.string "salinity_tolerance"
+    t.string "native_status"
   end
 
   create_table "users", force: :cascade do |t|
