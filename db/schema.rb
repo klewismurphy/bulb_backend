@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_25_223327) do
+ActiveRecord::Schema.define(version: 2021_05_02_194718) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 2021_04_25_223327) do
     t.integer "root_depth"
     t.string "salinity_tolerance"
     t.string "native_status"
+    t.string "image_url"
   end
 
   create_table "users", force: :cascade do |t|
