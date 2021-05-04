@@ -40,5 +40,3 @@
 # end
 
 # puts "There are now #{Plant.count} rows in the plants table"
-
-# require HTTP

@@ -1,9 +1,9 @@
 {
   id: @plant.id,
-  common_name: @plant.common_name,
+  common_name: @plant.common,
   acc_symbol: @plant.acc_symbol,
-  scientific_name: @plant.scientific_name,
-  state: @plant.state,
+  scientific_name: @plant.scientific,
+  state: @plant.states,
   native_status: @plant.native_status,
   growth_period: @plant.growth_period,
   flower_color: @plant.flower_color,

@@ -2,6 +2,6 @@
   id: @garden.id,
   user_id: @garden.user_id,
   plant_id: @garden.plant_id,
-  plant: @plant.common_name,
+  plant: @plant.common,
   status: @garden.status,
 }
