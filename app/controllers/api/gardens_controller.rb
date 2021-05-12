@@ -25,6 +25,7 @@ class Api::GardensController < ApplicationController
     @garden = Garden.find_by(id: params[:id])
     @plant = Plant.find_by(id: @garden.plant_id)
     @garden.status = params[:status]
+    @garden.notes = params[:notes]
     @garden.save
     render "show.json.jb"
   end
